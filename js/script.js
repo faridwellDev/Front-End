@@ -38,7 +38,7 @@ window.onload = () => {
 }
 
 document.querySelector('.home').onmousemove = (e) => {
-    document.querySelector('.home-parallax').forEach(elm => {
+    document.querySelectorAll('.home-parallax').forEach(elm => {
 
         let speed = elm.getAttribute('data-speed');
 
@@ -50,7 +50,7 @@ document.querySelector('.home').onmousemove = (e) => {
 };
 
 document.querySelector('.home').onmouseleave = () => {
-    document.querySelector('.home-parallax').forEach(elm => {
+    document.querySelectorAll('.home-parallax').forEach(elm => {
 
         elm.style.transform = 'translateX(0px) traslateY(0px)';
     });
